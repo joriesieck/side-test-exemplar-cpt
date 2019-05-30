@@ -1,8 +1,8 @@
 <?php
 /*
 Plugin Name: Exemplars Custom Post Type
-Version: 1.0
-Description: Creates a custom "Exemplars" post type
+Version: 1.1
+Description: Creates custom "Exemplars", "Competencies", and "Scenarios" post types
 Author: Jorie Sieck
 Author URI: https://my.thinkeracademy.com
 */
