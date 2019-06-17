@@ -31,7 +31,7 @@ function register_cpt_exemplar() {
         'taxonomies' => array('category'),
     );
 
-    register_post_type('exemplars',$args);
+    register_post_type('exemplar',$args);
 }
 
 add_action('init',__NAMESPACE__ . '\register_cpt_competency');
@@ -56,7 +56,7 @@ function register_cpt_competency() {
         'taxonomies' => array('category'),
     );
 
-    register_post_type('competencies',$args);
+    register_post_type('competency',$args);
 }
 
 add_action('init',__NAMESPACE__ . '\register_cpt_scenario');
@@ -81,5 +81,5 @@ function register_cpt_scenario() {
         'taxonomies' => array('category'),
     );
 
-    register_post_type('scenarios',$args);
+    register_post_type('scenario',$args);
 }
