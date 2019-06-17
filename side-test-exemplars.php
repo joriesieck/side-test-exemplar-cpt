@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Exemplars Custom Post Type
-Version: 1.1
+Version: 1.2
 Description: Creates custom "Exemplars", "Competencies", and "Scenarios" post types
 Author: Jorie Sieck
 Author URI: https://my.thinkeracademy.com
@@ -17,12 +17,18 @@ function register_cpt_exemplar() {
     $labels = array(
         'name' => _x('Exemplars','exemplars'),
         'singular_name' => _x('Exemplar','exemplar'),
+        'all_items' => ('All Exemplars'),
+        'add_new_item' => ('Add New Exemplar'),
+        'edit_item' => ('Edit Exemplar'),
+        'search_items' => ('Search Exemplars'),
+        'view_item' => ('View Exemplar'),
     );
 
     $args = array(
         'label' => __('Exemplars', 'exemplars'),
         'labels' => $labels,
         'public' => true,
+        'taxonomies' => array('category'),
     );
 
     register_post_type('exemplars',$args);
@@ -36,12 +42,18 @@ function register_cpt_competency() {
     $labels = array(
         'name' => _x('Competencies','competencies'),
         'singular_name' => _x('Competency','competency'),
+        'all_items' => ('All Competencies'),
+        'add_new_item' => ('Add New Competency'),
+        'edit_item' => ('Edit Competency'),
+        'search_items' => ('Search Competencies'),
+        'view_item' => ('View Competency'),
     );
 
     $args = array(
         'label' => __('Competencies', 'competencies'),
         'labels' => $labels,
         'public' => true,
+        'taxonomies' => array('category'),
     );
 
     register_post_type('competencies',$args);
@@ -55,12 +67,18 @@ function register_cpt_scenario() {
     $labels = array(
         'name' => _x('Scenarios','scenarios'),
         'singular_name' => _x('Scenario','scenario'),
+        'all_items' => ('All Scenarios'),
+        'add_new_item' => ('Add New Scenario'),
+        'edit_item' => ('Edit Scenario'),
+        'search_items' => ('Search Scenarios'),
+        'view_item' => ('View Scenario'),
     );
 
     $args = array(
         'label' => __('Scenarios', 'scenarios'),
         'labels' => $labels,
         'public' => true,
+        'taxonomies' => array('category'),
     );
 
     register_post_type('scenarios',$args);
